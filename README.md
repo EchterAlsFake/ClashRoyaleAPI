@@ -2,6 +2,8 @@ This project is still under development. Documentation
 and final README will be added, when the first official 
 release is published on PyPi.
 
+Edit: I haven't given up here, but I still need time yk
+
 Thank you for your patience :) 
 
 
