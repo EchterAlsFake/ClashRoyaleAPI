@@ -1,0 +1,909 @@
+{
+  "source": "Official developer.clashroyale.com rendered Swagger UI export",
+  "sha256": "847f3384a2feec814d4cd8f2f629860fdd3a4aca91991b7292d76986866ed888",
+  "limitations": [
+    "Collapsed models omit nested field definitions.",
+    "Leaderboard leagues references missing definition List."
+  ],
+  "operations": [
+    {
+      "operation_id": "getClanWarLog",
+      "method": "GET",
+      "path": "/clans/{clanTag}/warlog",
+      "python_method": "get_clan_war_log",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "ClanWarLog",
+      "summary": "Retrieve clan's clan war log",
+      "description": "Retrieve clan's clan war log"
+    },
+    {
+      "operation_id": "searchClans",
+      "method": "GET",
+      "path": "/clans",
+      "python_method": "search_clans",
+      "parameters": [
+        {
+          "name": "name",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "locationId",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "minMembers",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "maxMembers",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "minScore",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "ClanList",
+      "summary": "Search clans",
+      "description": "Search all clans by name and/or filtering the results using various criteria. At least one filtering criteria must be defined and if name is used as part of search, it is required to be at least three characters long It is not possible to specify ordering for results so clients should not rely on any specific ordering as that may change in the future releases of the API."
+    },
+    {
+      "operation_id": "getRiverRaceWarLog",
+      "method": "GET",
+      "path": "/clans/{clanTag}/riverracelog",
+      "python_method": "get_clan_river_race_log",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "RiverRaceLog",
+      "summary": "Retrieve clan's river race log",
+      "description": "Retrieve clan's river race log"
+    },
+    {
+      "operation_id": "getCurrentWar",
+      "method": "GET",
+      "path": "/clans/{clanTag}/currentwar",
+      "python_method": "get_current_war",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "CurrentClanWar",
+      "summary": "Retrieve information about clan's current clan war",
+      "description": "Retrieve information about clan's current clan war"
+    },
+    {
+      "operation_id": "getClan",
+      "method": "GET",
+      "path": "/clans/{clanTag}",
+      "python_method": "get_clan",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "Clan",
+      "summary": "Get clan information",
+      "description": "Get information about a single clan by clan tag. Clan tags can be found using clan search operation. Note that clan tags start with hash character '#' and that needs to be URL-encoded properly to work in URL, so for example clan tag '#2ABC' would become '%232ABC' in the URL."
+    },
+    {
+      "operation_id": "getClanMembers",
+      "method": "GET",
+      "path": "/clans/{clanTag}/members",
+      "python_method": "get_clan_members",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "ClanMemberList",
+      "summary": "List clan members",
+      "description": "List clan members."
+    },
+    {
+      "operation_id": "getCurrentRiverRace",
+      "method": "GET",
+      "path": "/clans/{clanTag}/currentriverrace",
+      "python_method": "get_current_river_race",
+      "parameters": [
+        {
+          "name": "clanTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "CurrentRiverRace",
+      "summary": "Retrieve information about clan's current river race",
+      "description": "Retrieve information about clan's current river race"
+    },
+    {
+      "operation_id": "getPlayer",
+      "method": "GET",
+      "path": "/players/{playerTag}",
+      "python_method": "get_player",
+      "parameters": [
+        {
+          "name": "playerTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "Player",
+      "summary": "Get player information",
+      "description": "Get information about a single player by player tag. Player tags can be found either in game or by from clan member lists. Note that player tags start with hash character '#' and that needs to be URL-encoded properly to work in URL, so for example player tag '#2ABC' would become '%232ABC' in the URL."
+    },
+    {
+      "operation_id": "getPlayerUpcomingChests",
+      "method": "GET",
+      "path": "/players/{playerTag}/upcomingchests",
+      "python_method": "get_player_upcoming_chests",
+      "parameters": [
+        {
+          "name": "playerTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "UpcomingChests",
+      "summary": "Get information about player's upcoming chests",
+      "description": "Get list of reward chests that the player will receive next in the game."
+    },
+    {
+      "operation_id": "getPlayerBattles",
+      "method": "GET",
+      "path": "/players/{playerTag}/battlelog",
+      "python_method": "get_player_battle_log",
+      "parameters": [
+        {
+          "name": "playerTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "BattleList",
+      "summary": "Get list of recent battles for a player",
+      "description": "Get list of recent battles for a player"
+    },
+    {
+      "operation_id": "getCards",
+      "method": "GET",
+      "path": "/cards",
+      "python_method": "get_cards",
+      "parameters": [
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "Items",
+      "summary": "Get list of available cards",
+      "description": "Get list of available cards"
+    },
+    {
+      "operation_id": "searchTournaments",
+      "method": "GET",
+      "path": "/tournaments",
+      "python_method": "search_tournaments",
+      "parameters": [
+        {
+          "name": "name",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "TournamentHeaderList",
+      "summary": "Search tournaments",
+      "description": "Search all tournaments by name. It is not possible to specify ordering for results so clients should not rely on any specific ordering as that may change in the future releases of the API."
+    },
+    {
+      "operation_id": "getTournament",
+      "method": "GET",
+      "path": "/tournaments/{tournamentTag}",
+      "python_method": "get_tournament",
+      "parameters": [
+        {
+          "name": "tournamentTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "Tournament",
+      "summary": "Get tournament information",
+      "description": "Get information about a single tournament by a tournament tag."
+    },
+    {
+      "operation_id": "getClanRanking",
+      "method": "GET",
+      "path": "/locations/{locationId}/rankings/clans",
+      "python_method": "get_clan_ranking",
+      "parameters": [
+        {
+          "name": "locationId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "ClanRankingList",
+      "summary": "Get clan rankings for a specific location",
+      "description": "Get clan rankings for a specific location"
+    },
+    {
+      "operation_id": "getPlayerRanking",
+      "method": "GET",
+      "path": "/locations/{locationId}/rankings/players",
+      "python_method": "get_player_ranking",
+      "parameters": [
+        {
+          "name": "locationId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "PlayerRankingList",
+      "summary": "Get player rankings for a specific location",
+      "description": "Deprecated: this endpoint always returns an empty list and will be removed in a future version. Trophy road player rankings no longer exist; use the Path of Legend ranking endpoints instead."
+    },
+    {
+      "operation_id": "getClanWarsRanking",
+      "method": "GET",
+      "path": "/locations/{locationId}/rankings/clanwars",
+      "python_method": "get_clan_wars_ranking",
+      "parameters": [
+        {
+          "name": "locationId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "ClanRankingList",
+      "summary": "Get clan war rankings for a specific location",
+      "description": "Get clan war rankings for a specific location"
+    },
+    {
+      "operation_id": "getTopPlayerPathOfLegendSeasonRankings",
+      "method": "GET",
+      "path": "/locations/global/pathoflegend/{seasonId}/rankings/players",
+      "python_method": "get_top_player_path_of_legend_season_rankings",
+      "parameters": [
+        {
+          "name": "seasonId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "PlayerPathOfLegendRankingList",
+      "summary": "Get top Path of Legend players for given season.",
+      "description": "Get top Path of Legend players for given season."
+    },
+    {
+      "operation_id": "getTopPlayerLeagueSeasonHandler",
+      "method": "GET",
+      "path": "/locations/global/seasons/{seasonId}",
+      "python_method": "get_season",
+      "parameters": [
+        {
+          "name": "seasonId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "LeagueSeason",
+      "summary": "Get top player league season.",
+      "description": "Get top player league season."
+    },
+    {
+      "operation_id": "getTopPlayerLeagueSeasonRankings",
+      "method": "GET",
+      "path": "/locations/global/seasons/{seasonId}/rankings/players",
+      "python_method": "get_top_player_league_season_rankings",
+      "parameters": [
+        {
+          "name": "seasonId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "PlayerRankingList",
+      "summary": "Get top player rankings for a season.",
+      "description": "Get top player rankings for a season."
+    },
+    {
+      "operation_id": "listTopPlayerLeagueSeasonsHandler",
+      "method": "GET",
+      "path": "/locations/global/seasons",
+      "python_method": "get_seasons",
+      "parameters": [],
+      "response": "LeagueSeasonList",
+      "summary": "Lists top player league seasons.",
+      "description": "Lists top player league seasons."
+    },
+    {
+      "operation_id": "getLocations",
+      "method": "GET",
+      "path": "/locations",
+      "python_method": "get_locations",
+      "parameters": [
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "LocationList",
+      "summary": "List locations",
+      "description": "List locations"
+    },
+    {
+      "operation_id": "listTopPlayerLeagueSeasonsV2Handler",
+      "method": "GET",
+      "path": "/locations/global/seasonsV2",
+      "python_method": "get_seasons_v2",
+      "parameters": [],
+      "response": "LeagueSeasonList",
+      "summary": "Lists league seasons with more details.",
+      "description": "Lists league seasons with unique season IDs and season end times."
+    },
+    {
+      "operation_id": "getLocation",
+      "method": "GET",
+      "path": "/locations/{locationId}",
+      "python_method": "get_location",
+      "parameters": [
+        {
+          "name": "locationId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "response": "Location",
+      "summary": "Get location information",
+      "description": "Get information about specific location"
+    },
+    {
+      "operation_id": "getGlobalTournamentRanking",
+      "method": "GET",
+      "path": "/locations/global/rankings/tournaments/{tournamentTag}",
+      "python_method": "get_global_tournament_ranking",
+      "parameters": [
+        {
+          "name": "tournamentTag",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "LadderTournamentRankingList",
+      "summary": "Get global tournament rankings",
+      "description": "Get global tournament rankings"
+    },
+    {
+      "operation_id": "getPlayerPathOfLegendRanking",
+      "method": "GET",
+      "path": "/locations/{locationId}/pathoflegend/players",
+      "python_method": "get_player_path_of_legend_ranking",
+      "parameters": [
+        {
+          "name": "locationId",
+          "in": "path",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "PlayerPathOfLegendRankingList",
+      "summary": "Get player rankings in Path of Legend for a specific location",
+      "description": "Get player rankings in Path of Legend for a specific location"
+    },
+    {
+      "operation_id": "getTrailEvents",
+      "method": "GET",
+      "path": "/events",
+      "python_method": "get_events",
+      "parameters": [],
+      "response": "TrailEventList",
+      "summary": "Get current events.",
+      "description": "Get current events. Returns a list of ongoing events with its Title and Description localized."
+    },
+    {
+      "operation_id": "getLeaderboard",
+      "method": "GET",
+      "path": "/leaderboard/{leaderboardId}",
+      "python_method": "get_leaderboard",
+      "parameters": [
+        {
+          "name": "leaderboardId",
+          "in": "path",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "LeaderboardList",
+      "summary": "Get players on a specific leaderboard",
+      "description": "Get players on a specific leaderboard"
+    },
+    {
+      "operation_id": "getLeaderboards",
+      "method": "GET",
+      "path": "/leaderboards",
+      "python_method": "get_leaderboards",
+      "parameters": [],
+      "response": "LeaderboardList",
+      "summary": "List leaderboards",
+      "description": "List leaderboards for different trophy roads. A leaderboard with a board per competitive League lists its Leagues in leagues."
+    },
+    {
+      "operation_id": "getLeaderboardLeague",
+      "method": "GET",
+      "path": "/leaderboard/{leaderboardId}/leagues/{leagueId}",
+      "python_method": "get_leaderboard_league",
+      "parameters": [
+        {
+          "name": "leaderboardId",
+          "in": "path",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "leagueId",
+          "in": "path",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "limit",
+          "in": "query",
+          "type": "integer",
+          "required": false
+        },
+        {
+          "name": "after",
+          "in": "query",
+          "type": "string",
+          "required": false
+        },
+        {
+          "name": "before",
+          "in": "query",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "response": "LeaderboardEntryList",
+      "summary": "Get players on a League's board of a leaderboard",
+      "description": "Get players on the board of one competitive League of a leaderboard"
+    },
+    {
+      "operation_id": "getGlobalTournaments",
+      "method": "GET",
+      "path": "/globaltournaments",
+      "python_method": "get_global_tournaments",
+      "parameters": [],
+      "response": "LadderTournamentList",
+      "summary": "Get list of global tournaments",
+      "description": "Get list of global tournaments"
+    }
+  ],
+  "schemas": {
+    "CurrentClanWar": {
+      "state": "string",
+      "clan": "ClanWarClan",
+      "participants": "ClanWarParticipantList",
+      "clans": "ClanWarClanList",
+      "collectionEndTime": "string",
+      "warEndTime": "string"
+    },
+    "Clan": {
+      "badgeId": "integer",
+      "memberList": "ClanMemberList",
+      "clanChestStatus": "string",
+      "clanChestLevel": "integer",
+      "clanChestMaxLevel": "integer",
+      "clanScore": "integer",
+      "clanWarTrophies": "integer",
+      "requiredTrophies": "integer",
+      "donationsPerWeek": "integer",
+      "members": "integer",
+      "name": "string",
+      "location": "Location",
+      "type": "string",
+      "tag": "string",
+      "description": "string",
+      "clanChestPoints": "integer",
+      "badgeUrls": "object"
+    },
+    "CurrentRiverRace": {
+      "state": "string",
+      "clan": "RiverRaceClan",
+      "clans": "RiverRaceClanList",
+      "collectionEndTime": "string",
+      "warEndTime": "string",
+      "sectionIndex": "integer",
+      "periodIndex": "integer",
+      "periodType": "string",
+      "periodLogs": "PeriodLogList"
+    },
+    "Player": {
+      "clan": "PlayerClan",
+      "legacyTrophyRoadHighScore": "integer",
+      "currentDeck": "PlayerItemLevelList",
+      "currentDeckSupportCards": "PlayerItemLevelList",
+      "arena": "Arena",
+      "role": "string",
+      "wins": "integer",
+      "losses": "integer",
+      "totalDonations": "integer",
+      "leagueStatistics": "PlayerLeagueStatistics",
+      "cards": "PlayerItemLevelList",
+      "supportCards": "PlayerItemLevelList",
+      "currentFavouriteCard": "Item",
+      "badges": "PlayerAchievementBadgeList",
+      "tag": "string",
+      "name": "string",
+      "collectionLevel": "integer",
+      "kingTowerLevel": "integer",
+      "expLevel": "integer",
+      "trophies": "integer",
+      "bestTrophies": "integer",
+      "donations": "integer",
+      "donationsReceived": "integer",
+      "achievements": "PlayerAchievementProgressList",
+      "battleCount": "integer",
+      "threeCrownWins": "integer",
+      "challengeCardsWon": "integer",
+      "challengeMaxWins": "integer",
+      "tournamentCardsWon": "integer",
+      "tournamentBattleCount": "integer",
+      "currentWinLoseStreak": "integer",
+      "warDayWins": "integer",
+      "clanCardsCollected": "integer",
+      "starPoints": "integer",
+      "expPoints": "integer",
+      "totalExpPoints": "integer",
+      "currentPathOfLegendSeasonResult": "PathOfLegendSeasonResult",
+      "lastPathOfLegendSeasonResult": "PathOfLegendSeasonResult",
+      "bestPathOfLegendSeasonResult": "PathOfLegendSeasonResult",
+      "progress": "object"
+    },
+    "UpcomingChests": {
+      "items": "ChestList"
+    },
+    "Items": {
+      "items": "ItemList",
+      "supportItems": "ItemList"
+    },
+    "Tournament": {
+      "gameMode": "GameMode",
+      "status": "string",
+      "preparationDuration": "integer",
+      "membersList": "TournamentMemberList",
+      "createdTime": "string",
+      "startedTime": "string",
+      "endedTime": "string",
+      "firstPlaceCardPrize": "integer",
+      "type": "string",
+      "duration": "integer",
+      "tag": "string",
+      "creatorTag": "string",
+      "name": "string",
+      "description": "string",
+      "capacity": "integer",
+      "maxCapacity": "integer",
+      "levelCap": "integer"
+    },
+    "LeagueSeason": {
+      "id": "string"
+    },
+    "Location": {
+      "localizedName": "string",
+      "id": "integer",
+      "name": "string",
+      "isCountry": "boolean",
+      "countryCode": "string"
+    }
+  }
+}

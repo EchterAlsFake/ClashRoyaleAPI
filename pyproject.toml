@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ClashRoyaleAPI"
+version = "1.0.0"
+description = "Typed async Python client for the official Clash Royale REST API"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{name = "Johannes Habel", email = "EchterAlsFake@proton.me"}]
+dependencies = ["curl-cffi>=0.13,<1", "pydantic>=2.11,<3"]
+classifiers = ["Programming Language :: Python :: 3", "Framework :: AsyncIO", "Typing :: Typed"]
+
+[project.urls]
+Homepage = "https://github.com/EchterAlsFake/ClashRoyaleAPI"
+Documentation = "https://docs.echteralsfake.me/clashroyaleapi/"
+Issues = "https://github.com/EchterAlsFake/ClashRoyaleAPI/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=1",
+    "ruff>=0.12",
+    "mypy>=1.17",
+    "build>=1.2",
+    "twine>=6",
+    "beautifulsoup4>=4.13",
+    "markdown>=3.11.3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clashroyaleapi"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "scripts", "docs", "README.md", "LICENSE", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src"]
+check_untyped_defs = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP"]
+ignore = ["UP046"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/clashroyaleapi/__init__.py" = ["F403"]
