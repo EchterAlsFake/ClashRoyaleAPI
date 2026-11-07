@@ -143,7 +143,7 @@ def section(anchor: str, title: str, body: str) -> str:
 def render_guide() -> tuple[str, list[tuple[str, str]]]:
     soup = BeautifulSoup(
         markdown.markdown(
-            Path("docs/getting-started.md").read_text(),
+            Path("docs/getting-started.md").read_text(encoding="utf-8"),
             extensions=["fenced_code", "tables", "attr_list"],
         ),
         "html.parser",
@@ -196,7 +196,7 @@ def usage(operation: dict[str, Any]) -> str:
 
 
 def main():
-    reference = json.loads(Path("docs/api-reference.json").read_text())
+    reference = json.loads(Path("docs/api-reference.json").read_text(encoding="utf-8"))
     guide, guide_nav = render_guide()
     nav = '<div class="nav-section-title">Getting started</div>'
     nav += "".join(f'<a href="#{a}" class="nav-link">{escaped(t)}</a>' for a, t in guide_nav[:3])
@@ -274,7 +274,9 @@ def main():
             ]
         nav += "</div></div>"
         groups.append(section(group, title, f"<p>{escaped(description)}</p>" + "".join(cards)))
-    Path("docs/endpoints.md").write_text("\n".join(markdown_reference).rstrip() + "\n")
+    Path("docs/endpoints.md").write_text(
+        "\n".join(markdown_reference).rstrip() + "\n", encoding="utf-8"
+    )
     model_lines = [
         "# Response models",
         "",
@@ -304,7 +306,7 @@ def main():
         model_cards.append(
             f'<details class="method-card" id="model-{name}"><summary><code>{name}</code></summary>{table}</details>'
         )
-    Path("docs/models.md").write_text("\n".join(model_lines).rstrip() + "\n")
+    Path("docs/models.md").write_text("\n".join(model_lines).rstrip() + "\n", encoding="utf-8")
     nav += '<div class="nav-section-title">Data models</div><a href="#response-models" class="nav-link">Working with models</a><a href="#models-reference" class="nav-link">Model field reference</a>'
     model_section = section(
         "models-reference",
@@ -336,7 +338,7 @@ def main():
         + model_section
         + "\n<!-- END:MAIN_CONTENT -->\n"
     )
-    Path("docs/clashroyaleapi.html").write_text(fragment)
+    Path("docs/clashroyaleapi.html").write_text(fragment, encoding="utf-8")
 
 
 if __name__ == "__main__":
