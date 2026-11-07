@@ -1,531 +1,530 @@
 # Response models
 
-All fields are optional unless stated otherwise. Unknown fields are retained.
+Fields are optional unless stated otherwise. Unknown fields are retained. See [working with models](getting-started.md#response-models).
 
 ## APIModel
 
-```text
-
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
 
 ## Cursors
 
-```text
-before: str | None
-after: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `before` | `str  /  None` | `before` |
+| `after` | `str  /  None` | `after` |
 
 ## Paging
 
-```text
-cursors: <class 'clashroyaleapi.models.Cursors'>
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `cursors` | `Cursors` | `cursors` |
 
 ## Page
 
-```text
-items: list[~T]
-paging: <class 'clashroyaleapi.models.Paging'>
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `items` | `list[T]` | `items` |
+| `paging` | `Paging` | `paging` |
 
 ## Arena
 
-```text
-id: int | None
-name: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `name` | `str  /  None` | `name` |
 
 ## Battle
 
-```text
-type: str | None
-battle_time: datetime.datetime | None
-is_ladder_tournament: bool | None
-is_hosted_match: bool | None
-deck_selection: str | None
-league_number: int | None
-game_mode: ForwardRef('GameMode | None')
-arena: clashroyaleapi.models.Arena | None
-team: ForwardRef('list[PlayerBattleData] | None')
-opponent: ForwardRef('list[PlayerBattleData] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `type` | `str  /  None` | `type` |
+| `battle_time` | `datetime  /  None` | `battleTime` |
+| `is_ladder_tournament` | `bool  /  None` | `isLadderTournament` |
+| `is_hosted_match` | `bool  /  None` | `isHostedMatch` |
+| `deck_selection` | `str  /  None` | `deckSelection` |
+| `league_number` | `int  /  None` | `leagueNumber` |
+| `game_mode` | `ForwardRef('GameMode  /  None')` | `gameMode` |
+| `arena` | `Arena  /  None` | `arena` |
+| `team` | `ForwardRef('list[PlayerBattleData]  /  None')` | `team` |
+| `opponent` | `ForwardRef('list[PlayerBattleData]  /  None')` | `opponent` |
 
 ## Chest
 
-```text
-index: int | None
-name: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `index` | `int  /  None` | `index` |
+| `name` | `str  /  None` | `name` |
 
 ## Clan
 
-```text
-badge_id: int | None
-member_list: ForwardRef('list[ClanMember] | None')
-clan_chest_status: str | None
-clan_chest_level: int | None
-clan_chest_max_level: int | None
-clan_score: int | None
-clan_war_trophies: int | None
-required_trophies: int | None
-donations_per_week: int | None
-members: int | None
-name: str | None
-location: ForwardRef('Location | None')
-type: str | None
-tag: str | None
-description: str | None
-clan_chest_points: int | None
-badge_urls: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `badge_id` | `int  /  None` | `badgeId` |
+| `member_list` | `ForwardRef('list[ClanMember]  /  None')` | `memberList` |
+| `clan_chest_status` | `str  /  None` | `clanChestStatus` |
+| `clan_chest_level` | `int  /  None` | `clanChestLevel` |
+| `clan_chest_max_level` | `int  /  None` | `clanChestMaxLevel` |
+| `clan_score` | `int  /  None` | `clanScore` |
+| `clan_war_trophies` | `int  /  None` | `clanWarTrophies` |
+| `required_trophies` | `int  /  None` | `requiredTrophies` |
+| `donations_per_week` | `int  /  None` | `donationsPerWeek` |
+| `members` | `int  /  None` | `members` |
+| `name` | `str  /  None` | `name` |
+| `location` | `ForwardRef('Location  /  None')` | `location` |
+| `type` | `str  /  None` | `type` |
+| `tag` | `str  /  None` | `tag` |
+| `description` | `str  /  None` | `description` |
+| `clan_chest_points` | `int  /  None` | `clanChestPoints` |
+| `badge_urls` | `Any  /  None` | `badgeUrls` |
 
 ## ClanMember
 
-```text
-tag: str | None
-name: str | None
-role: str | None
-last_seen: datetime.datetime | None
-exp_level: int | None
-trophies: int | None
-clan_rank: int | None
-previous_clan_rank: int | None
-donations: int | None
-donations_received: int | None
-arena: clashroyaleapi.models.Arena | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `role` | `str  /  None` | `role` |
+| `last_seen` | `datetime  /  None` | `lastSeen` |
+| `exp_level` | `int  /  None` | `expLevel` |
+| `trophies` | `int  /  None` | `trophies` |
+| `clan_rank` | `int  /  None` | `clanRank` |
+| `previous_clan_rank` | `int  /  None` | `previousClanRank` |
+| `donations` | `int  /  None` | `donations` |
+| `donations_received` | `int  /  None` | `donationsReceived` |
+| `arena` | `Arena  /  None` | `arena` |
 
 ## ClanRanking
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-previous_rank: int | None
-clan_score: int | None
-members: int | None
-location: ForwardRef('Location | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `previous_rank` | `int  /  None` | `previousRank` |
+| `clan_score` | `int  /  None` | `clanScore` |
+| `members` | `int  /  None` | `members` |
+| `location` | `ForwardRef('Location  /  None')` | `location` |
 
 ## ClanWarClan
 
-```text
-tag: str | None
-name: str | None
-badge_id: int | None
-clan_score: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `badge_id` | `int  /  None` | `badgeId` |
+| `clan_score` | `int  /  None` | `clanScore` |
 
 ## ClanWarLogEntry
 
-```text
-created_date: datetime.datetime | None
-standings: ForwardRef('list[ClanWarStanding] | None')
-participants: ForwardRef('list[ClanWarParticipant] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `created_date` | `datetime  /  None` | `createdDate` |
+| `standings` | `ForwardRef('list[ClanWarStanding]  /  None')` | `standings` |
+| `participants` | `ForwardRef('list[ClanWarParticipant]  /  None')` | `participants` |
 
 ## ClanWarParticipant
 
-```text
-tag: str | None
-name: str | None
-wins: int | None
-battles_played: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `wins` | `int  /  None` | `wins` |
+| `battles_played` | `int  /  None` | `battlesPlayed` |
 
 ## ClanWarStanding
 
-```text
-rank: int | None
-trophy_change: int | None
-clan: clashroyaleapi.models.ClanWarClan | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `rank` | `int  /  None` | `rank` |
+| `trophy_change` | `int  /  None` | `trophyChange` |
+| `clan` | `ClanWarClan  /  None` | `clan` |
 
 ## CurrentClanWar
 
-```text
-state: str | None
-clan: clashroyaleapi.models.ClanWarClan | None
-participants: list[clashroyaleapi.models.ClanWarParticipant] | None
-clans: list[clashroyaleapi.models.ClanWarClan] | None
-collection_end_time: datetime.datetime | None
-war_end_time: datetime.datetime | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `state` | `str  /  None` | `state` |
+| `clan` | `ClanWarClan  /  None` | `clan` |
+| `participants` | `list[ClanWarParticipant]  /  None` | `participants` |
+| `clans` | `list[ClanWarClan]  /  None` | `clans` |
+| `collection_end_time` | `datetime  /  None` | `collectionEndTime` |
+| `war_end_time` | `datetime  /  None` | `warEndTime` |
 
 ## CurrentRiverRace
 
-```text
-state: str | None
-clan: ForwardRef('RiverRaceClan | None')
-clans: ForwardRef('list[RiverRaceClan] | None')
-collection_end_time: datetime.datetime | None
-war_end_time: datetime.datetime | None
-section_index: int | None
-period_index: int | None
-period_type: str | None
-period_logs: ForwardRef('list[PeriodLog] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `state` | `str  /  None` | `state` |
+| `clan` | `ForwardRef('RiverRaceClan  /  None')` | `clan` |
+| `clans` | `ForwardRef('list[RiverRaceClan]  /  None')` | `clans` |
+| `collection_end_time` | `datetime  /  None` | `collectionEndTime` |
+| `war_end_time` | `datetime  /  None` | `warEndTime` |
+| `section_index` | `int  /  None` | `sectionIndex` |
+| `period_index` | `int  /  None` | `periodIndex` |
+| `period_type` | `str  /  None` | `periodType` |
+| `period_logs` | `ForwardRef('list[PeriodLog]  /  None')` | `periodLogs` |
 
 ## GameMode
 
-```text
-id: int | None
-name: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `name` | `str  /  None` | `name` |
 
 ## Item
 
-```text
-id: int | None
-name: str | None
-max_level: int | None
-max_evolution_level: int | None
-rarity: str | None
-elixir_cost: int | None
-icon_urls: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `name` | `str  /  None` | `name` |
+| `max_level` | `int  /  None` | `maxLevel` |
+| `max_evolution_level` | `int  /  None` | `maxEvolutionLevel` |
+| `rarity` | `str  /  None` | `rarity` |
+| `elixir_cost` | `int  /  None` | `elixirCost` |
+| `icon_urls` | `Any  /  None` | `iconUrls` |
 
 ## Items
 
-```text
-items: list[clashroyaleapi.models.Item] | None
-support_items: list[clashroyaleapi.models.Item] | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `items` | `list[Item]  /  None` | `items` |
+| `support_items` | `list[Item]  /  None` | `supportItems` |
 
 ## LadderTournament
 
-```text
-id: int | None
-title: str | None
-game_mode: clashroyaleapi.models.GameMode | None
-start_time: datetime.datetime | None
-end_time: datetime.datetime | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `title` | `str  /  None` | `title` |
+| `game_mode` | `GameMode  /  None` | `gameMode` |
+| `start_time` | `datetime  /  None` | `startTime` |
+| `end_time` | `datetime  /  None` | `endTime` |
 
 ## LadderTournamentRanking
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-score: int | None
-clan: ForwardRef('PlayerRankingClan | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `score` | `int  /  None` | `score` |
+| `clan` | `ForwardRef('PlayerRankingClan  /  None')` | `clan` |
 
 ## Leaderboard
 
-```text
-id: int | None
-name: typing.Any | None
-leagues: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `name` | `Any  /  None` | `name` |
+| `leagues` | `Any  /  None` | `leagues` |
 
 ## LeaderboardEntry
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-score: int | None
-clan: ForwardRef('PlayerClan | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `score` | `int  /  None` | `score` |
+| `clan` | `ForwardRef('PlayerClan  /  None')` | `clan` |
 
 ## LeagueSeason
 
-```text
-id: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `str  /  None` | `id` |
 
 ## LeagueSeasonResult
 
-```text
-id: str | None
-trophies: int | None
-best_trophies: int | None
-rank: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `str  /  None` | `id` |
+| `trophies` | `int  /  None` | `trophies` |
+| `best_trophies` | `int  /  None` | `bestTrophies` |
+| `rank` | `int  /  None` | `rank` |
 
 ## LeagueSeasonV2
 
-```text
-code: str | None
-unique_id: int | None
-end_time: datetime.datetime | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `code` | `str  /  None` | `code` |
+| `unique_id` | `int  /  None` | `uniqueId` |
+| `end_time` | `datetime  /  None` | `endTime` |
 
 ## Location
 
-```text
-localized_name: str | None
-id: int | None
-name: str | None
-is_country: bool | None
-country_code: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `localized_name` | `str  /  None` | `localizedName` |
+| `id` | `int  /  None` | `id` |
+| `name` | `str  /  None` | `name` |
+| `is_country` | `bool  /  None` | `isCountry` |
+| `country_code` | `str  /  None` | `countryCode` |
 
 ## PathOfLegendSeasonResult
 
-```text
-league_number: int | None
-trophies: int | None
-rank: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `league_number` | `int  /  None` | `leagueNumber` |
+| `trophies` | `int  /  None` | `trophies` |
+| `rank` | `int  /  None` | `rank` |
 
 ## PeriodLog
 
-```text
-period_index: int | None
-items: ForwardRef('list[PeriodLogEntry] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `period_index` | `int  /  None` | `periodIndex` |
+| `items` | `ForwardRef('list[PeriodLogEntry]  /  None')` | `items` |
 
 ## PeriodLogEntry
 
-```text
-clan: ForwardRef('PeriodLogEntryClan | None')
-points_earned: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `clan` | `ForwardRef('PeriodLogEntryClan  /  None')` | `clan` |
+| `points_earned` | `int  /  None` | `pointsEarned` |
 
 ## PeriodLogEntryClan
 
-```text
-tag: str | None
-name: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
 
 ## Player
 
-```text
-clan: ForwardRef('PlayerClan | None')
-legacy_trophy_road_high_score: int | None
-current_deck: ForwardRef('list[PlayerItemLevel] | None')
-current_deck_support_cards: ForwardRef('list[PlayerItemLevel] | None')
-arena: clashroyaleapi.models.Arena | None
-role: str | None
-wins: int | None
-losses: int | None
-total_donations: int | None
-league_statistics: ForwardRef('PlayerLeagueStatistics | None')
-cards: ForwardRef('list[PlayerItemLevel] | None')
-support_cards: ForwardRef('list[PlayerItemLevel] | None')
-current_favourite_card: clashroyaleapi.models.Item | None
-badges: ForwardRef('list[PlayerAchievementBadge] | None')
-tag: str | None
-name: str | None
-collection_level: int | None
-king_tower_level: int | None
-exp_level: int | None
-trophies: int | None
-best_trophies: int | None
-donations: int | None
-donations_received: int | None
-achievements: ForwardRef('list[PlayerAchievementProgress] | None')
-battle_count: int | None
-three_crown_wins: int | None
-challenge_cards_won: int | None
-challenge_max_wins: int | None
-tournament_cards_won: int | None
-tournament_battle_count: int | None
-current_win_lose_streak: int | None
-war_day_wins: int | None
-clan_cards_collected: int | None
-star_points: int | None
-exp_points: int | None
-total_exp_points: int | None
-current_path_of_legend_season_result: clashroyaleapi.models.PathOfLegendSeasonResult | None
-last_path_of_legend_season_result: clashroyaleapi.models.PathOfLegendSeasonResult | None
-best_path_of_legend_season_result: clashroyaleapi.models.PathOfLegendSeasonResult | None
-progress: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `clan` | `ForwardRef('PlayerClan  /  None')` | `clan` |
+| `legacy_trophy_road_high_score` | `int  /  None` | `legacyTrophyRoadHighScore` |
+| `current_deck` | `ForwardRef('list[PlayerItemLevel]  /  None')` | `currentDeck` |
+| `current_deck_support_cards` | `ForwardRef('list[PlayerItemLevel]  /  None')` | `currentDeckSupportCards` |
+| `arena` | `Arena  /  None` | `arena` |
+| `role` | `str  /  None` | `role` |
+| `wins` | `int  /  None` | `wins` |
+| `losses` | `int  /  None` | `losses` |
+| `total_donations` | `int  /  None` | `totalDonations` |
+| `league_statistics` | `ForwardRef('PlayerLeagueStatistics  /  None')` | `leagueStatistics` |
+| `cards` | `ForwardRef('list[PlayerItemLevel]  /  None')` | `cards` |
+| `support_cards` | `ForwardRef('list[PlayerItemLevel]  /  None')` | `supportCards` |
+| `current_favourite_card` | `Item  /  None` | `currentFavouriteCard` |
+| `badges` | `ForwardRef('list[PlayerAchievementBadge]  /  None')` | `badges` |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `collection_level` | `int  /  None` | `collectionLevel` |
+| `king_tower_level` | `int  /  None` | `kingTowerLevel` |
+| `exp_level` | `int  /  None` | `expLevel` |
+| `trophies` | `int  /  None` | `trophies` |
+| `best_trophies` | `int  /  None` | `bestTrophies` |
+| `donations` | `int  /  None` | `donations` |
+| `donations_received` | `int  /  None` | `donationsReceived` |
+| `achievements` | `ForwardRef('list[PlayerAchievementProgress]  /  None')` | `achievements` |
+| `battle_count` | `int  /  None` | `battleCount` |
+| `three_crown_wins` | `int  /  None` | `threeCrownWins` |
+| `challenge_cards_won` | `int  /  None` | `challengeCardsWon` |
+| `challenge_max_wins` | `int  /  None` | `challengeMaxWins` |
+| `tournament_cards_won` | `int  /  None` | `tournamentCardsWon` |
+| `tournament_battle_count` | `int  /  None` | `tournamentBattleCount` |
+| `current_win_lose_streak` | `int  /  None` | `currentWinLoseStreak` |
+| `war_day_wins` | `int  /  None` | `warDayWins` |
+| `clan_cards_collected` | `int  /  None` | `clanCardsCollected` |
+| `star_points` | `int  /  None` | `starPoints` |
+| `exp_points` | `int  /  None` | `expPoints` |
+| `total_exp_points` | `int  /  None` | `totalExpPoints` |
+| `current_path_of_legend_season_result` | `PathOfLegendSeasonResult  /  None` | `currentPathOfLegendSeasonResult` |
+| `last_path_of_legend_season_result` | `PathOfLegendSeasonResult  /  None` | `lastPathOfLegendSeasonResult` |
+| `best_path_of_legend_season_result` | `PathOfLegendSeasonResult  /  None` | `bestPathOfLegendSeasonResult` |
+| `progress` | `Any  /  None` | `progress` |
 
 ## PlayerAchievementBadge
 
-```text
-name: str | None
-level: int | None
-max_level: int | None
-progress: int | None
-target: int | None
-icon_urls: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `name` | `str  /  None` | `name` |
+| `level` | `int  /  None` | `level` |
+| `max_level` | `int  /  None` | `maxLevel` |
+| `progress` | `int  /  None` | `progress` |
+| `target` | `int  /  None` | `target` |
+| `icon_urls` | `Any  /  None` | `iconUrls` |
 
 ## PlayerAchievementProgress
 
-```text
-name: str | None
-stars: int | None
-value: int | None
-target: int | None
-info: str | None
-completion_info: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `name` | `str  /  None` | `name` |
+| `stars` | `int  /  None` | `stars` |
+| `value` | `int  /  None` | `value` |
+| `target` | `int  /  None` | `target` |
+| `info` | `str  /  None` | `info` |
+| `completion_info` | `str  /  None` | `completionInfo` |
 
 ## PlayerBattleData
 
-```text
-tag: str | None
-name: str | None
-crowns: int | None
-king_tower_hit_points: int | None
-princess_towers_hit_points: typing.Any | None
-clan: ForwardRef('PlayerClan | None')
-cards: ForwardRef('list[PlayerItemLevel] | None')
-trophy_change: int | None
-elixir_leaked: float | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `crowns` | `int  /  None` | `crowns` |
+| `king_tower_hit_points` | `int  /  None` | `kingTowerHitPoints` |
+| `princess_towers_hit_points` | `Any  /  None` | `princessTowersHitPoints` |
+| `clan` | `ForwardRef('PlayerClan  /  None')` | `clan` |
+| `cards` | `ForwardRef('list[PlayerItemLevel]  /  None')` | `cards` |
+| `trophy_change` | `int  /  None` | `trophyChange` |
+| `elixir_leaked` | `float  /  None` | `elixirLeaked` |
 
 ## PlayerClan
 
-```text
-tag: str | None
-name: str | None
-badge_id: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `badge_id` | `int  /  None` | `badgeId` |
 
 ## PlayerItemLevel
 
-```text
-id: int | None
-name: str | None
-level: int | None
-max_level: int | None
-count: int | None
-star_level: int | None
-evolution_level: int | None
-rarity: str | None
-elixir_cost: int | None
-icon_urls: typing.Any | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `name` | `str  /  None` | `name` |
+| `level` | `int  /  None` | `level` |
+| `max_level` | `int  /  None` | `maxLevel` |
+| `count` | `int  /  None` | `count` |
+| `star_level` | `int  /  None` | `starLevel` |
+| `evolution_level` | `int  /  None` | `evolutionLevel` |
+| `rarity` | `str  /  None` | `rarity` |
+| `elixir_cost` | `int  /  None` | `elixirCost` |
+| `icon_urls` | `Any  /  None` | `iconUrls` |
 
 ## PlayerLeagueStatistics
 
-```text
-current_season: clashroyaleapi.models.LeagueSeasonResult | None
-previous_season: clashroyaleapi.models.LeagueSeasonResult | None
-best_season: clashroyaleapi.models.LeagueSeasonResult | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `current_season` | `LeagueSeasonResult  /  None` | `currentSeason` |
+| `previous_season` | `LeagueSeasonResult  /  None` | `previousSeason` |
+| `best_season` | `LeagueSeasonResult  /  None` | `bestSeason` |
 
 ## PlayerPathOfLegendRanking
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-trophies: int | None
-clan: ForwardRef('PlayerRankingClan | None')
-elo_rating: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `trophies` | `int  /  None` | `trophies` |
+| `clan` | `ForwardRef('PlayerRankingClan  /  None')` | `clan` |
+| `elo_rating` | `int  /  None` | `eloRating` |
 
 ## PlayerRanking
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-previous_rank: int | None
-trophies: int | None
-clan: ForwardRef('PlayerRankingClan | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `previous_rank` | `int  /  None` | `previousRank` |
+| `trophies` | `int  /  None` | `trophies` |
+| `clan` | `ForwardRef('PlayerRankingClan  /  None')` | `clan` |
 
 ## PlayerRankingClan
 
-```text
-tag: str | None
-name: str | None
-badge_id: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `badge_id` | `int  /  None` | `badgeId` |
 
 ## RiverRaceClan
 
-```text
-tag: str | None
-name: str | None
-badge_id: int | None
-fame: int | None
-repair_points: int | None
-clan_score: int | None
-participants: ForwardRef('list[RiverRaceParticipant] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `badge_id` | `int  /  None` | `badgeId` |
+| `fame` | `int  /  None` | `fame` |
+| `repair_points` | `int  /  None` | `repairPoints` |
+| `clan_score` | `int  /  None` | `clanScore` |
+| `participants` | `ForwardRef('list[RiverRaceParticipant]  /  None')` | `participants` |
 
 ## RiverRaceLogEntry
 
-```text
-season_id: int | None
-section_index: int | None
-created_date: datetime.datetime | None
-standings: ForwardRef('list[RiverRaceStanding] | None')
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `season_id` | `int  /  None` | `seasonId` |
+| `section_index` | `int  /  None` | `sectionIndex` |
+| `created_date` | `datetime  /  None` | `createdDate` |
+| `standings` | `ForwardRef('list[RiverRaceStanding]  /  None')` | `standings` |
 
 ## RiverRaceParticipant
 
-```text
-tag: str | None
-name: str | None
-fame: int | None
-repair_points: int | None
-decks_used: int | None
-decks_used_today: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `fame` | `int  /  None` | `fame` |
+| `repair_points` | `int  /  None` | `repairPoints` |
+| `decks_used` | `int  /  None` | `decksUsed` |
+| `decks_used_today` | `int  /  None` | `decksUsedToday` |
 
 ## RiverRaceStanding
 
-```text
-rank: int | None
-trophy_change: int | None
-clan: clashroyaleapi.models.RiverRaceClan | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `rank` | `int  /  None` | `rank` |
+| `trophy_change` | `int  /  None` | `trophyChange` |
+| `clan` | `RiverRaceClan  /  None` | `clan` |
 
 ## Tournament
 
-```text
-game_mode: clashroyaleapi.models.GameMode | None
-status: str | None
-preparation_duration: int | None
-members_list: ForwardRef('list[TournamentMember] | None')
-created_time: datetime.datetime | None
-started_time: datetime.datetime | None
-ended_time: datetime.datetime | None
-first_place_card_prize: int | None
-type: str | None
-duration: int | None
-tag: str | None
-creator_tag: str | None
-name: str | None
-description: str | None
-capacity: int | None
-max_capacity: int | None
-level_cap: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `game_mode` | `GameMode  /  None` | `gameMode` |
+| `status` | `str  /  None` | `status` |
+| `preparation_duration` | `int  /  None` | `preparationDuration` |
+| `members_list` | `ForwardRef('list[TournamentMember]  /  None')` | `membersList` |
+| `created_time` | `datetime  /  None` | `createdTime` |
+| `started_time` | `datetime  /  None` | `startedTime` |
+| `ended_time` | `datetime  /  None` | `endedTime` |
+| `first_place_card_prize` | `int  /  None` | `firstPlaceCardPrize` |
+| `type` | `str  /  None` | `type` |
+| `duration` | `int  /  None` | `duration` |
+| `tag` | `str  /  None` | `tag` |
+| `creator_tag` | `str  /  None` | `creatorTag` |
+| `name` | `str  /  None` | `name` |
+| `description` | `str  /  None` | `description` |
+| `capacity` | `int  /  None` | `capacity` |
+| `max_capacity` | `int  /  None` | `maxCapacity` |
+| `level_cap` | `int  /  None` | `levelCap` |
 
 ## TournamentHeader
 
-```text
-tag: str | None
-name: str | None
-status: str | None
-capacity: int | None
-max_capacity: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `status` | `str  /  None` | `status` |
+| `capacity` | `int  /  None` | `capacity` |
+| `max_capacity` | `int  /  None` | `maxCapacity` |
 
 ## TournamentMember
 
-```text
-tag: str | None
-name: str | None
-rank: int | None
-score: int | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `tag` | `str  /  None` | `tag` |
+| `name` | `str  /  None` | `name` |
+| `rank` | `int  /  None` | `rank` |
+| `score` | `int  /  None` | `score` |
 
 ## TrailEvent
 
-```text
-id: int | None
-title: typing.Any | None
-description: typing.Any | None
-event_tag: str | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `id` | `int  /  None` | `id` |
+| `title` | `Any  /  None` | `title` |
+| `description` | `Any  /  None` | `description` |
+| `event_tag` | `str  /  None` | `eventTag` |
 
 ## UpcomingChests
 
-```text
-items: list[clashroyaleapi.models.Chest] | None
-```
+| Attribute | Type | API field |
+| --- | --- | --- |
+| `items` | `list[Chest]  /  None` | `items` |

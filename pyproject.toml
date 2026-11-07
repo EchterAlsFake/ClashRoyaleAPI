@@ -29,6 +29,7 @@ dev = [
     "twine>=6",
     "beautifulsoup4>=4.13",
     "markdown>=3.11.3",
+    "pygments>=2.19",
 ]
 
 [tool.hatch.build.targets.wheel]
