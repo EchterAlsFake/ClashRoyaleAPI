@@ -8,6 +8,26 @@ All fields are optional unless stated otherwise. Unknown fields are retained.
 
 ```
 
+## Cursors
+
+```text
+before: str | None
+after: str | None
+```
+
+## Paging
+
+```text
+cursors: <class 'clashroyaleapi.models.Cursors'>
+```
+
+## Page
+
+```text
+items: list[~T]
+paging: <class 'clashroyaleapi.models.Paging'>
+```
+
 ## Arena
 
 ```text
@@ -146,13 +166,6 @@ period_type: str | None
 period_logs: ForwardRef('list[PeriodLog] | None')
 ```
 
-## Cursors
-
-```text
-before: str | None
-after: str | None
-```
-
 ## GameMode
 
 ```text
@@ -214,6 +227,7 @@ tag: str | None
 name: str | None
 rank: int | None
 score: int | None
+clan: ForwardRef('PlayerClan | None')
 ```
 
 ## LeagueSeason
@@ -231,6 +245,14 @@ best_trophies: int | None
 rank: int | None
 ```
 
+## LeagueSeasonV2
+
+```text
+code: str | None
+unique_id: int | None
+end_time: datetime.datetime | None
+```
+
 ## Location
 
 ```text
@@ -239,19 +261,6 @@ id: int | None
 name: str | None
 is_country: bool | None
 country_code: str | None
-```
-
-## Page
-
-```text
-items: list[~T]
-paging: <class 'clashroyaleapi.models.Paging'>
-```
-
-## Paging
-
-```text
-cursors: <class 'clashroyaleapi.models.Cursors'>
 ```
 
 ## PathOfLegendSeasonResult
@@ -403,6 +412,7 @@ name: str | None
 rank: int | None
 trophies: int | None
 clan: ForwardRef('PlayerRankingClan | None')
+elo_rating: int | None
 ```
 
 ## PlayerRanking
@@ -511,6 +521,7 @@ score: int | None
 id: int | None
 title: typing.Any | None
 description: typing.Any | None
+event_tag: str | None
 ```
 
 ## UpcomingChests

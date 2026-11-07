@@ -1,0 +1,211 @@
+{
+  "network_requests": 86,
+  "battle_modes": [
+    "PvP",
+    "boatBattle",
+    "pathOfLegend",
+    "riverRacePvP",
+    "trail"
+  ],
+  "checked_at": "2026-11-07T00:42:00.125775+00:00",
+  "discovery": {
+    "active_global_tournaments": 0,
+    "advertised_leagues": 0
+  },
+  "historical_global_tournament_source": "https://royaleapi.com/players/gt/leaderboard/758209",
+  "summary": {
+    "passed": 72,
+    "upstream_disabled": 2,
+    "unresolved_resource": 2
+  },
+  "operations": [
+    {
+      "method": "get_clan_war_log",
+      "outcome": "upstream_disabled",
+      "error": "NotFound",
+      "message": "This API endpoint has been temporarily disabled, possibilities to bring it back are being investigated.",
+      "reason": "notFound",
+      "http_status": 404
+    },
+    {
+      "method": "search_clans",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_clan_river_race_log",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_current_war",
+      "outcome": "upstream_disabled",
+      "error": "APIError",
+      "message": "This API endpoint has been permanently removed.",
+      "reason": "gone",
+      "http_status": 410
+    },
+    {
+      "method": "get_clan",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_clan_members",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_current_river_race",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_player",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_player_upcoming_chests",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_player_battle_log",
+      "outcome": "passed",
+      "items": 30,
+      "http_status": 200
+    },
+    {
+      "method": "get_cards",
+      "outcome": "passed",
+      "items": 123,
+      "http_status": 200
+    },
+    {
+      "method": "search_tournaments",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_tournament",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_clan_ranking",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_player_ranking",
+      "outcome": "passed",
+      "items": 0,
+      "http_status": 200
+    },
+    {
+      "method": "get_clan_wars_ranking",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_top_player_path_of_legend_season_rankings",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_season",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_top_player_league_season_rankings",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_seasons",
+      "outcome": "passed",
+      "items": 145,
+      "http_status": 200
+    },
+    {
+      "method": "get_locations",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_seasons_v2",
+      "outcome": "passed",
+      "items": 145,
+      "http_status": 200
+    },
+    {
+      "method": "get_location",
+      "outcome": "passed",
+      "items": 1,
+      "http_status": 200
+    },
+    {
+      "method": "get_global_tournament_ranking",
+      "outcome": "unresolved_resource",
+      "error": "NotFound",
+      "message": "API request failed (HTTP 404)",
+      "reason": "notFound",
+      "http_status": 404
+    },
+    {
+      "method": "get_player_path_of_legend_ranking",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_events",
+      "outcome": "passed",
+      "items": 6,
+      "http_status": 200
+    },
+    {
+      "method": "get_leaderboard",
+      "outcome": "passed",
+      "items": 3,
+      "http_status": 200
+    },
+    {
+      "method": "get_leaderboards",
+      "outcome": "passed",
+      "items": 34,
+      "http_status": 200
+    },
+    {
+      "method": "get_leaderboard_league",
+      "outcome": "unresolved_resource",
+      "error": "NotFound",
+      "message": "API request failed (HTTP 404)",
+      "reason": "notFound",
+      "http_status": 404
+    },
+    {
+      "method": "get_global_tournaments",
+      "outcome": "passed",
+      "items": 0,
+      "http_status": 200
+    }
+  ]
+}

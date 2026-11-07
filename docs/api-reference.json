@@ -592,7 +592,9 @@
       "parameters": [],
       "response": "LeagueSeasonList",
       "summary": "Lists league seasons with more details.",
-      "description": "Lists league seasons with unique season IDs and season end times."
+      "description": "Lists league seasons with unique season IDs and season end times.",
+      "client_response": "LeagueSeasonV2List",
+      "live_note": "Live fields are code, uniqueId and endTime, including null values."
     },
     {
       "operation_id": "getLocation",
@@ -724,7 +726,9 @@
       ],
       "response": "LeaderboardList",
       "summary": "Get players on a specific leaderboard",
-      "description": "Get players on a specific leaderboard"
+      "description": "Get players on a specific leaderboard",
+      "client_response": "LeaderboardEntryList",
+      "live_note": "HTTP 200 returns ranked player entries, not catalog definitions."
     },
     {
       "operation_id": "getLeaderboards",

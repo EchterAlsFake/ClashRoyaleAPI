@@ -241,7 +241,7 @@ Async iterator: `client.iter_get_locations(...)`.
 `GET /locations/global/seasonsV2`
 
 ```python
-await client.get_seasons_v2(self) -> list[clashroyaleapi.models.LeagueSeason]
+await client.get_seasons_v2(self) -> list[clashroyaleapi.models.LeagueSeasonV2]
 ```
 
 Lists league seasons with unique season IDs and season end times.
@@ -295,7 +295,7 @@ Get current events. Returns a list of ongoing events with its Title and Descript
 `GET /leaderboard/{leaderboardId}`
 
 ```python
-await client.get_leaderboard(self, leaderboard_id: int, *, limit: int | None = None, after: str | None = None, before: str | None = None) -> clashroyaleapi.models.Page[Leaderboard]
+await client.get_leaderboard(self, leaderboard_id: int, *, limit: int | None = None, after: str | None = None, before: str | None = None) -> clashroyaleapi.models.Page[LeaderboardEntry]
 ```
 
 Get players on a specific leaderboard

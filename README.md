@@ -33,6 +33,8 @@ Create your own token at https://developer.clashroyale.com and allowlist the pub
 - Up to three attempts for GET requests encountering transport failures, 429, or 5xx. Retry delays are bounded to 30 seconds. Caching is opt-in.
 - Complete endpoint coverage refers to the supplied official documentation snapshot, not a guarantee of upstream availability. Nested model definitions collapsed in that snapshot cannot be exhaustively validated. Deprecated endpoints remain supported.
 
+Live verification: all 30 routes were exercised; 26 operations succeeded, two are explicitly disabled, and two lack working live resources. See [live audit results and rerun instructions](docs/live-testing.md).
+
 ## Development
 
 ```sh

@@ -442,10 +442,10 @@ class Client(Transport):
         ):
             yield item
 
-    async def get_seasons_v2(self) -> list[models.LeagueSeason]:
+    async def get_seasons_v2(self) -> list[models.LeagueSeasonV2]:
         """Lists league seasons with more details.. See endpoint reference for parameters and limitations."""
         data = await self._get("/locations/global/seasonsV2", {}, {})
-        return self._list(data, models.LeagueSeason)
+        return self._list(data, models.LeagueSeasonV2)
 
     async def get_location(self, location_id: str) -> models.Location:
         """Get location information. See endpoint reference for parameters and limitations."""
@@ -530,14 +530,14 @@ class Client(Transport):
         limit: int | None = None,
         after: str | None = None,
         before: str | None = None,
-    ) -> models.Page[models.Leaderboard]:
+    ) -> models.Page[models.LeaderboardEntry]:
         """Get players on a specific leaderboard. See endpoint reference for parameters and limitations."""
         data = await self._get(
             "/leaderboard/{leaderboardId}",
             {"leaderboardId": leaderboard_id},
             {"limit": limit, "after": after, "before": before},
         )
-        return self._page(data, models.Leaderboard)
+        return self._page(data, models.LeaderboardEntry)
 
     async def iter_get_leaderboard(
         self,
@@ -546,13 +546,13 @@ class Client(Transport):
         limit: int | None = None,
         after: str | None = None,
         before: str | None = None,
-    ) -> AsyncIterator[models.Leaderboard]:
+    ) -> AsyncIterator[models.LeaderboardEntry]:
         """Iterate get_leaderboard across pages until the server has no next cursor."""
         async for item in self._iterate(
             "/leaderboard/{leaderboardId}",
             {"leaderboardId": leaderboard_id},
             {"limit": limit, "after": after, "before": before},
-            models.Leaderboard,
+            models.LeaderboardEntry,
         ):
             yield item
 

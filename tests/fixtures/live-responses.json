@@ -1,0 +1,2864 @@
+{
+  "search_clans": [
+    {
+      "arguments": {
+        "name": "royale",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "type": "open",
+            "badgeId": 16000124,
+            "clanScore": 106799,
+            "clanWarTrophies": 1829,
+            "location": {
+              "id": 57000114,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "ID"
+            },
+            "requiredTrophies": 0,
+            "donationsPerWeek": 2969,
+            "clanChestLevel": 1,
+            "clanChestMaxLevel": 0,
+            "members": 48
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "location_id": 57000094,
+        "limit": 3,
+        "name": "royale"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "type": "open",
+            "badgeId": 16000077,
+            "clanScore": 97387,
+            "clanWarTrophies": 2215,
+            "location": {
+              "id": 57000094,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "DE"
+            },
+            "requiredTrophies": 1000,
+            "donationsPerWeek": 3969,
+            "clanChestLevel": 1,
+            "clanChestMaxLevel": 0,
+            "members": 48
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_clan": [
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL"
+      },
+      "response": {
+        "tag": "#EXAMPLE",
+        "name": "Sample",
+        "type": "open",
+        "description": "Sample",
+        "badgeId": 16000173,
+        "clanScore": 132068,
+        "clanWarTrophies": 2530,
+        "location": {
+          "id": 57000114,
+          "name": "Sample",
+          "isCountry": true,
+          "countryCode": "ID"
+        },
+        "requiredTrophies": 9000,
+        "donationsPerWeek": 4636,
+        "clanChestStatus": "inactive",
+        "clanChestLevel": 1,
+        "clanChestMaxLevel": 0,
+        "members": 50,
+        "memberList": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "coLeader",
+            "lastSeen": "20261106T235701.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 1,
+            "previousClanRank": 3,
+            "donations": 260,
+            "donationsReceived": 320,
+            "clanChestPoints": 0
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "member",
+            "lastSeen": "20261106T221934.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 2,
+            "previousClanRank": 11,
+            "donations": 132,
+            "donationsReceived": 200,
+            "clanChestPoints": 0
+          }
+        ]
+      }
+    },
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL"
+      },
+      "response": {
+        "tag": "#EXAMPLE",
+        "name": "Sample",
+        "type": "open",
+        "description": "Sample",
+        "badgeId": 16000173,
+        "clanScore": 132068,
+        "clanWarTrophies": 2530,
+        "location": {
+          "id": 57000114,
+          "name": "Sample",
+          "isCountry": true,
+          "countryCode": "ID"
+        },
+        "requiredTrophies": 9000,
+        "donationsPerWeek": 4636,
+        "clanChestStatus": "inactive",
+        "clanChestLevel": 1,
+        "clanChestMaxLevel": 0,
+        "members": 50,
+        "memberList": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "coLeader",
+            "lastSeen": "20261106T235701.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 1,
+            "previousClanRank": 3,
+            "donations": 260,
+            "donationsReceived": 320,
+            "clanChestPoints": 0
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "member",
+            "lastSeen": "20261106T221934.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 2,
+            "previousClanRank": 11,
+            "donations": 132,
+            "donationsReceived": 200,
+            "clanChestPoints": 0
+          }
+        ]
+      }
+    }
+  ],
+  "get_seasons": [
+    {
+      "arguments": {},
+      "response": {
+        "items": [
+          {
+            "id": "2016-02"
+          },
+          {
+            "id": "2016-02"
+          }
+        ],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    },
+    {
+      "arguments": {},
+      "response": {
+        "items": [
+          {
+            "id": "2016-02"
+          },
+          {
+            "id": "2016-02"
+          }
+        ],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    }
+  ],
+  "get_leaderboards": [
+    {
+      "arguments": {},
+      "response": {
+        "items": [
+          {
+            "id": 170000019,
+            "name": "Sample"
+          },
+          {
+            "id": 679855,
+            "name": null
+          }
+        ]
+      }
+    },
+    {
+      "arguments": {},
+      "response": {
+        "items": [
+          {
+            "id": 170000019,
+            "name": "Sample"
+          },
+          {
+            "id": 679855,
+            "name": null
+          }
+        ]
+      }
+    }
+  ],
+  "search_tournaments": [
+    {
+      "arguments": {
+        "name": "royale",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "type": "open",
+            "status": "inPreparation",
+            "creatorTag": "#EXAMPLE",
+            "name": "Sample",
+            "description": "Sample",
+            "levelCap": 12,
+            "firstPlaceCardPrize": 0,
+            "capacity": 1,
+            "maxCapacity": 10,
+            "preparationDuration": 3600,
+            "duration": 1800,
+            "createdTime": "20261107T003030.000Z",
+            "gameMode": {
+              "id": 72000009
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    },
+    {
+      "arguments": {
+        "limit": 3,
+        "name": "royale"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "type": "open",
+            "status": "inPreparation",
+            "creatorTag": "#EXAMPLE",
+            "name": "Sample",
+            "description": "Sample",
+            "levelCap": 12,
+            "firstPlaceCardPrize": 0,
+            "capacity": 1,
+            "maxCapacity": 10,
+            "preparationDuration": 3600,
+            "duration": 1800,
+            "createdTime": "20261107T003030.000Z",
+            "gameMode": {
+              "id": 72000009
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    }
+  ],
+  "get_global_tournaments": [
+    {
+      "arguments": {},
+      "response": {
+        "items": []
+      }
+    },
+    {
+      "arguments": {},
+      "response": {
+        "items": []
+      }
+    }
+  ],
+  "get_clan_river_race_log": [
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "seasonId": 137,
+            "sectionIndex": 3,
+            "createdDate": "20261102T093405.000Z",
+            "standings": [
+              {
+                "rank": 1,
+                "trophyChange": 100,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000073,
+                  "fame": 60750,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2660
+                }
+              },
+              {
+                "rank": 2,
+                "trophyChange": 50,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000003,
+                  "fame": 44950,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2610
+                }
+              }
+            ]
+          },
+          {
+            "seasonId": 137,
+            "sectionIndex": 2,
+            "createdDate": "20261026T093533.000Z",
+            "standings": [
+              {
+                "rank": 1,
+                "trophyChange": 20,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000073,
+                  "fame": 10000,
+                  "repairPoints": 0,
+                  "finishTime": "20261026T093531.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2640
+                }
+              },
+              {
+                "rank": 2,
+                "trophyChange": 10,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000003,
+                  "fame": 7884,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2600
+                }
+              }
+            ]
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "seasonId": 137,
+            "sectionIndex": 0,
+            "createdDate": "20261012T093406.000Z",
+            "standings": [
+              {
+                "rank": 1,
+                "trophyChange": 20,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000073,
+                  "fame": 10000,
+                  "repairPoints": 0,
+                  "finishTime": "20261012T093404.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2600
+                }
+              },
+              {
+                "rank": 2,
+                "trophyChange": 10,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000173,
+                  "fame": 6838,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2580
+                }
+              }
+            ]
+          },
+          {
+            "seasonId": 136,
+            "sectionIndex": 3,
+            "createdDate": "20261005T094603.000Z",
+            "standings": [
+              {
+                "rank": 1,
+                "trophyChange": 100,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000044,
+                  "fame": 64200,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 100,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 1,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2720
+                }
+              },
+              {
+                "rank": 2,
+                "trophyChange": 50,
+                "clan": {
+                  "tag": "#EXAMPLE",
+                  "name": "Sample",
+                  "badgeId": 16000171,
+                  "fame": 52900,
+                  "repairPoints": 0,
+                  "finishTime": "19691231T235959.000Z",
+                  "participants": [
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    },
+                    {
+                      "tag": "#EXAMPLE",
+                      "name": "Sample",
+                      "fame": 0,
+                      "repairPoints": 0,
+                      "boatAttacks": 0,
+                      "decksUsed": 0,
+                      "decksUsedToday": 0
+                    }
+                  ],
+                  "periodPoints": 0,
+                  "clanScore": 2680
+                }
+              }
+            ]
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_clan_members": [
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "coLeader",
+            "lastSeen": "20261106T235701.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 1,
+            "previousClanRank": 3,
+            "donations": 260,
+            "donationsReceived": 320,
+            "clanChestPoints": 0
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "member",
+            "lastSeen": "20261106T221934.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 2,
+            "previousClanRank": 11,
+            "donations": 132,
+            "donationsReceived": 200,
+            "clanChestPoints": 0
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "coLeader",
+            "lastSeen": "20261106T190012.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 4,
+            "previousClanRank": 4,
+            "donations": 217,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "role": "member",
+            "lastSeen": "20261106T184745.000Z",
+            "expLevel": 0,
+            "trophies": 14000,
+            "arena": {
+              "id": 54000144,
+              "name": "Sample",
+              "rawName": "Arena_L18"
+            },
+            "clanRank": 5,
+            "previousClanRank": 7,
+            "donations": 98,
+            "donationsReceived": 112,
+            "clanChestPoints": 0
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_current_river_race": [
+    {
+      "arguments": {
+        "clan_tag": "#9V28QGPL"
+      },
+      "response": {
+        "state": "full",
+        "clan": {
+          "tag": "#EXAMPLE",
+          "name": "Sample",
+          "badgeId": 16000173,
+          "fame": 964,
+          "repairPoints": 0,
+          "participants": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "fame": 0,
+              "repairPoints": 0,
+              "boatAttacks": 0,
+              "decksUsed": 0,
+              "decksUsedToday": 0
+            },
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "fame": 0,
+              "repairPoints": 0,
+              "boatAttacks": 0,
+              "decksUsed": 0,
+              "decksUsedToday": 0
+            }
+          ],
+          "periodPoints": 6900,
+          "clanScore": 2530
+        },
+        "clans": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "badgeId": 16000060,
+            "fame": 2123,
+            "repairPoints": 0,
+            "participants": [
+              {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "fame": 0,
+                "repairPoints": 0,
+                "boatAttacks": 0,
+                "decksUsed": 0,
+                "decksUsedToday": 0
+              },
+              {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "fame": 0,
+                "repairPoints": 0,
+                "boatAttacks": 0,
+                "decksUsed": 0,
+                "decksUsedToday": 0
+              }
+            ],
+            "periodPoints": 7950,
+            "clanScore": 2559
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "badgeId": 16000015,
+            "fame": 3376,
+            "repairPoints": 0,
+            "participants": [
+              {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "fame": 0,
+                "repairPoints": 0,
+                "boatAttacks": 0,
+                "decksUsed": 0,
+                "decksUsedToday": 0
+              },
+              {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "fame": 0,
+                "repairPoints": 0,
+                "boatAttacks": 0,
+                "decksUsed": 0,
+                "decksUsedToday": 0
+              }
+            ],
+            "periodPoints": 7900,
+            "clanScore": 2540
+          }
+        ],
+        "sectionIndex": 0,
+        "periodIndex": 4,
+        "periodType": "warDay",
+        "periodLogs": [
+          {
+            "periodIndex": 3,
+            "items": [
+              {
+                "clan": {
+                  "tag": "#EXAMPLE"
+                },
+                "pointsEarned": 15925,
+                "progressStartOfDay": 0,
+                "progressEndOfDay": 3376,
+                "endOfDayRank": 0,
+                "progressEarned": 3000,
+                "numOfDefensesRemaining": 14,
+                "progressEarnedFromDefenses": 376
+              },
+              {
+                "clan": {
+                  "tag": "#EXAMPLE"
+                },
+                "pointsEarned": 10650,
+                "progressStartOfDay": 0,
+                "progressEndOfDay": 2123,
+                "endOfDayRank": 1,
+                "progressEarned": 1800,
+                "numOfDefensesRemaining": 13,
+                "progressEarnedFromDefenses": 323
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "get_player": [
+    {
+      "arguments": {
+        "player_tag": "#VY98JU28L"
+      },
+      "response": {
+        "tag": "#EXAMPLE",
+        "name": "Sample",
+        "collectionLevel": 1717,
+        "kingTowerLevel": 16,
+        "expLevel": 71,
+        "trophies": 14000,
+        "bestTrophies": 14000,
+        "wins": 2862,
+        "losses": 2092,
+        "battleCount": 4954,
+        "threeCrownWins": 1053,
+        "challengeCardsWon": 0,
+        "challengeMaxWins": 5,
+        "tournamentCardsWon": 0,
+        "tournamentBattleCount": 162,
+        "currentWinLoseStreak": -1,
+        "role": "coLeader",
+        "donations": 260,
+        "donationsReceived": 320,
+        "totalDonations": 52646,
+        "warDayWins": 0,
+        "clanCardsCollected": 0,
+        "clan": {
+          "tag": "#EXAMPLE",
+          "name": "Sample",
+          "badgeId": 16000173
+        },
+        "arena": {
+          "id": 54000144,
+          "name": "Sample",
+          "rawName": "Arena_L18"
+        },
+        "badges": [
+          {
+            "name": "Sample",
+            "level": 3,
+            "maxLevel": 8,
+            "progress": 82,
+            "target": 100,
+            "iconUrls": {
+              "large": "https://api-assets.clashroyale.com/playerbadges/512/XFr9s1QjVFQFPaQpU0uB6-mIFct7adY0n6ia3TnEIx4.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "level": 2,
+            "maxLevel": 11,
+            "progress": 1045,
+            "target": 1095,
+            "iconUrls": {
+              "large": "https://api-assets.clashroyale.com/playerbadges/512/SlmLq0AclBHaPRaCN14pqR1KAd3eYP2u4Ih4vqQcVmw.png"
+            }
+          }
+        ],
+        "achievements": [
+          {
+            "name": "Sample",
+            "stars": 3,
+            "value": 21,
+            "target": 1,
+            "info": "Sample",
+            "completionInfo": null
+          },
+          {
+            "name": "Sample",
+            "stars": 3,
+            "value": 52646,
+            "target": 2500,
+            "info": "Sample",
+            "completionInfo": null
+          }
+        ],
+        "cards": [
+          {
+            "name": "Sample",
+            "id": 26000000,
+            "level": 16,
+            "evolutionLevel": 1,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 3,
+            "rarity": "common",
+            "count": 0,
+            "elixirCost": 3,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+              "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 26000001,
+            "level": 9,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 1,
+            "rarity": "common",
+            "count": 11944,
+            "elixirCost": 3,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
+            }
+          }
+        ],
+        "supportCards": [
+          {
+            "name": "Sample",
+            "id": 159000000,
+            "level": 16,
+            "maxLevel": 16,
+            "rarity": "common",
+            "count": 0,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 159000001,
+            "level": 11,
+            "maxLevel": 11,
+            "rarity": "epic",
+            "count": 0,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/cUfU4UowRdbIiRvxv0ns4ezQUNndJTy7D2q4I_K_fzg.png"
+            }
+          }
+        ],
+        "currentDeck": [
+          {
+            "name": "Sample",
+            "id": 26000008,
+            "level": 16,
+            "starLevel": 2,
+            "evolutionLevel": 1,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 1,
+            "rarity": "common",
+            "count": 0,
+            "elixirCost": 5,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 26000085,
+            "level": 11,
+            "starLevel": 1,
+            "evolutionLevel": 1,
+            "maxLevel": 11,
+            "maxEvolutionLevel": 1,
+            "rarity": "epic",
+            "count": 0,
+            "elixirCost": 7,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+            }
+          }
+        ],
+        "currentDeckSupportCards": [
+          {
+            "name": "Sample",
+            "id": 159000000,
+            "level": 16,
+            "maxLevel": 16,
+            "rarity": "common",
+            "count": 0,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+            }
+          }
+        ],
+        "currentFavouriteCard": {
+          "name": "Sample",
+          "id": 26000085,
+          "maxLevel": 11,
+          "maxEvolutionLevel": 1,
+          "elixirCost": 7,
+          "iconUrls": {
+            "medium": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+            "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+          },
+          "rarity": "epic"
+        },
+        "starPoints": 14588,
+        "expPoints": 44103,
+        "legacyTrophyRoadHighScore": null,
+        "currentPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "lastPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "bestPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "progress": {
+          "": {
+            "arena": {
+              "id": 168000050,
+              "name": "Sample",
+              "rawName": "AutoChessArena1_2025_Oct"
+            },
+            "trophies": 0,
+            "bestTrophies": 0
+          },
+          "AutoChess_2026_Season_11": {
+            "arena": {
+              "id": 168000180,
+              "name": "Sample",
+              "rawName": "AutoChessArena1_2026_Season_11"
+            },
+            "trophies": 0,
+            "bestTrophies": 0
+          },
+          "seasonal-trophy-road-202611": {
+            "arena": {
+              "id": 168000201,
+              "name": "Sample",
+              "rawName": "SeasonalArenas_202611_Arena1"
+            },
+            "trophies": 14000,
+            "bestTrophies": 14000
+          }
+        },
+        "totalExpPoints": 4462873
+      }
+    },
+    {
+      "arguments": {
+        "player_tag": "#88U29GG2P"
+      },
+      "response": {
+        "tag": "#EXAMPLE",
+        "name": "Sample",
+        "collectionLevel": 1678,
+        "kingTowerLevel": 16,
+        "expLevel": 49,
+        "trophies": 14000,
+        "bestTrophies": 14000,
+        "wins": 2767,
+        "losses": 2513,
+        "battleCount": 5280,
+        "threeCrownWins": 1262,
+        "challengeCardsWon": 764,
+        "challengeMaxWins": 6,
+        "tournamentCardsWon": 0,
+        "tournamentBattleCount": 60,
+        "currentWinLoseStreak": 3,
+        "role": "member",
+        "donations": 132,
+        "donationsReceived": 200,
+        "totalDonations": 19859,
+        "warDayWins": 15,
+        "clanCardsCollected": 34236,
+        "clan": {
+          "tag": "#EXAMPLE",
+          "name": "Sample",
+          "badgeId": 16000173
+        },
+        "arena": {
+          "id": 54000144,
+          "name": "Sample",
+          "rawName": "Arena_L18"
+        },
+        "leagueStatistics": {
+          "currentSeason": {
+            "trophies": 14000,
+            "bestTrophies": 4607
+          },
+          "previousSeason": {
+            "id": "2026-10",
+            "trophies": 4936,
+            "bestTrophies": 4936
+          },
+          "bestSeason": {
+            "id": "2021-03",
+            "trophies": 4948
+          }
+        },
+        "badges": [
+          {
+            "name": "Sample",
+            "level": 9,
+            "maxLevel": 11,
+            "progress": 3416,
+            "target": 3650,
+            "iconUrls": {
+              "large": "https://api-assets.clashroyale.com/playerbadges/512/3TeHoCb_VUTGDRtC3j5H-wn6e_ROJ1rhOe5w-fZzqIM.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "level": 6,
+            "maxLevel": 8,
+            "progress": 2767,
+            "target": 5000,
+            "iconUrls": {
+              "large": "https://api-assets.clashroyale.com/playerbadges/512/Hh18NG8LhvwZrcmtGR8rSKRezmhOxCilxqhroDLBnys.png"
+            }
+          }
+        ],
+        "achievements": [
+          {
+            "name": "Sample",
+            "stars": 3,
+            "value": 24,
+            "target": 1,
+            "info": "Sample",
+            "completionInfo": null
+          },
+          {
+            "name": "Sample",
+            "stars": 3,
+            "value": 19859,
+            "target": 2500,
+            "info": "Sample",
+            "completionInfo": null
+          }
+        ],
+        "cards": [
+          {
+            "name": "Sample",
+            "id": 28000002,
+            "level": 8,
+            "maxLevel": 11,
+            "rarity": "epic",
+            "count": 15,
+            "elixirCost": 2,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 26000002,
+            "level": 12,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 2,
+            "rarity": "common",
+            "count": 2096,
+            "elixirCost": 2,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/X_DQUye_OaS3QN6VC9CPw05Fit7wvSm3XegXIXKP--0.png",
+              "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/X_DQUye_OaS3QN6VC9CPw05Fit7wvSm3XegXIXKP--0.png"
+            }
+          }
+        ],
+        "supportCards": [
+          {
+            "name": "Sample",
+            "id": 159000000,
+            "level": 16,
+            "maxLevel": 16,
+            "rarity": "common",
+            "count": 0,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 159000001,
+            "level": 6,
+            "maxLevel": 11,
+            "rarity": "epic",
+            "count": 74,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/cUfU4UowRdbIiRvxv0ns4ezQUNndJTy7D2q4I_K_fzg.png"
+            }
+          }
+        ],
+        "currentDeck": [
+          {
+            "name": "Sample",
+            "id": 26000017,
+            "level": 14,
+            "starLevel": 2,
+            "evolutionLevel": 3,
+            "maxLevel": 14,
+            "maxEvolutionLevel": 3,
+            "rarity": "rare",
+            "count": 0,
+            "elixirCost": 5,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+              "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+            }
+          },
+          {
+            "name": "Sample",
+            "id": 26000011,
+            "level": 14,
+            "starLevel": 2,
+            "evolutionLevel": 3,
+            "maxLevel": 14,
+            "maxEvolutionLevel": 3,
+            "rarity": "rare",
+            "count": 0,
+            "elixirCost": 4,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+              "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+            }
+          }
+        ],
+        "currentDeckSupportCards": [
+          {
+            "name": "Sample",
+            "id": 159000000,
+            "level": 16,
+            "maxLevel": 16,
+            "rarity": "common",
+            "count": 0,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+            }
+          }
+        ],
+        "currentFavouriteCard": {
+          "name": "Sample",
+          "id": 26000055,
+          "maxLevel": 8,
+          "maxEvolutionLevel": 1,
+          "elixirCost": 7,
+          "iconUrls": {
+            "medium": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png",
+            "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+          },
+          "rarity": "legendary"
+        },
+        "starPoints": 70300,
+        "expPoints": 19479,
+        "legacyTrophyRoadHighScore": 5033,
+        "currentPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "lastPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "bestPathOfLegendSeasonResult": {
+          "leagueNumber": 1,
+          "trophies": 0,
+          "rank": null
+        },
+        "progress": {
+          "": {
+            "arena": {
+              "id": 168000050,
+              "name": "Sample",
+              "rawName": "AutoChessArena1_2025_Oct"
+            },
+            "trophies": 0,
+            "bestTrophies": 0
+          },
+          "AutoChess_2026_Season_11": {
+            "arena": {
+              "id": 168000180,
+              "name": "Sample",
+              "rawName": "AutoChessArena1_2026_Season_11"
+            },
+            "trophies": 0,
+            "bestTrophies": 0
+          },
+          "seasonal-trophy-road-202611": {
+            "arena": {
+              "id": 168000201,
+              "name": "Sample",
+              "rawName": "SeasonalArenas_202611_Arena1"
+            },
+            "trophies": 14000,
+            "bestTrophies": 14030
+          }
+        },
+        "totalExpPoints": 398249
+      }
+    }
+  ],
+  "get_player_upcoming_chests": [
+    {
+      "arguments": {
+        "player_tag": "#VY98JU28L"
+      },
+      "response": {
+        "items": [
+          {
+            "index": 0,
+            "name": "Sample"
+          },
+          {
+            "index": 1,
+            "name": "Sample"
+          }
+        ]
+      }
+    }
+  ],
+  "get_player_battle_log": [
+    {
+      "arguments": {
+        "player_tag": "#VY98JU28L"
+      },
+      "response": [
+        {
+          "type": "riverRacePvP",
+          "battleTime": "20261107T000047.000Z",
+          "isLadderTournament": false,
+          "arena": {
+            "id": 54000144,
+            "name": "Sample",
+            "rawName": "Arena_L18"
+          },
+          "gameMode": {
+            "id": 72000062,
+            "name": "Sample"
+          },
+          "deckSelection": "collection",
+          "team": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 14000,
+              "crowns": 2,
+              "kingTowerHitPoints": 7728,
+              "princessTowersHitPoints": [
+                1407,
+                4164
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000014,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000007,
+                  "level": 11,
+                  "starLevel": 2,
+                  "maxLevel": 11,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "epic",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+                  }
+                }
+              ],
+              "supportCards": [],
+              "globalRank": null,
+              "elixirLeaked": 9.61
+            }
+          ],
+          "opponent": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 10803,
+              "crowns": 0,
+              "kingTowerHitPoints": 3964,
+              "princessTowersHitPoints": null,
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000043,
+                  "level": 16,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 16,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "common",
+                  "elixirCost": 6,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000014,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 2,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
+                  }
+                }
+              ],
+              "supportCards": [],
+              "globalRank": null,
+              "elixirLeaked": 7.65
+            }
+          ],
+          "isHostedMatch": false,
+          "leagueNumber": 1
+        },
+        {
+          "type": "pathOfLegend",
+          "battleTime": "20261103T005607.000Z",
+          "isLadderTournament": false,
+          "arena": {
+            "id": 54000163,
+            "name": "Sample",
+            "rawName": "Arena_competitive"
+          },
+          "gameMode": {
+            "id": 72000464,
+            "name": "Sample"
+          },
+          "deckSelection": "collection",
+          "team": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "crowns": 0,
+              "kingTowerHitPoints": 7728,
+              "princessTowersHitPoints": [
+                4858
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000008,
+                  "level": 16,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 16,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "common",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000085,
+                  "level": 11,
+                  "starLevel": 1,
+                  "maxLevel": 11,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "epic",
+                  "elixirCost": 7,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 1.37
+            }
+          ],
+          "opponent": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "trophyChange": 30,
+              "crowns": 1,
+              "kingTowerHitPoints": 7475,
+              "princessTowersHitPoints": [
+                4858,
+                858
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000113
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 28000017,
+                  "level": 16,
+                  "evolutionLevel": 1,
+                  "maxLevel": 16,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "common",
+                  "elixirCost": 2,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/7MaJLa6hK9WN2_VIshuh5DIDfGwm0wEv98gXtAxLDPs.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/7MaJLa6hK9WN2_VIshuh5DIDfGwm0wEv98gXtAxLDPs.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000000,
+                  "level": 16,
+                  "starLevel": 3,
+                  "evolutionLevel": 2,
+                  "maxLevel": 16,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "common",
+                  "elixirCost": 3,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 0.85
+            }
+          ],
+          "isHostedMatch": false,
+          "leagueNumber": 1
+        },
+        {
+          "type": "trail",
+          "battleTime": "20261028T060738.000Z",
+          "isLadderTournament": false,
+          "eventTag": "#EXAMPLE",
+          "arena": {
+            "id": 168000197,
+            "name": "Sample",
+            "rawName": "SeasonalArenas_202610_Arena1"
+          },
+          "gameMode": {
+            "id": 72000006,
+            "name": "Sample"
+          },
+          "deckSelection": "collection",
+          "team": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 14394,
+              "trophyChange": -29,
+              "crowns": 1,
+              "kingTowerHitPoints": 4793,
+              "princessTowersHitPoints": null,
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000008,
+                  "level": 16,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 16,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "common",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000085,
+                  "level": 11,
+                  "starLevel": 1,
+                  "maxLevel": 11,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "epic",
+                  "elixirCost": 7,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 0.0
+            }
+          ],
+          "opponent": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 14397,
+              "trophyChange": 29,
+              "crowns": 2,
+              "kingTowerHitPoints": 7328,
+              "princessTowersHitPoints": [
+                2875
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000003
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000036,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "rare",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000042,
+                  "level": 8,
+                  "starLevel": 1,
+                  "evolutionLevel": 2,
+                  "maxLevel": 8,
+                  "maxEvolutionLevel": 2,
+                  "rarity": "legendary",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 0.08
+            }
+          ],
+          "isHostedMatch": false,
+          "leagueNumber": 1
+        }
+      ]
+    },
+    {
+      "arguments": {
+        "player_tag": "#88U29GG2P"
+      },
+      "response": [
+        {
+          "type": "trail",
+          "battleTime": "20261106T141134.000Z",
+          "isLadderTournament": false,
+          "eventTag": "#EXAMPLE",
+          "arena": {
+            "id": 168000201,
+            "name": "Sample",
+            "rawName": "SeasonalArenas_202611_Arena1"
+          },
+          "gameMode": {
+            "id": 72000006,
+            "name": "Sample"
+          },
+          "deckSelection": "collection",
+          "team": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 14000,
+              "trophyChange": 30,
+              "crowns": 1,
+              "kingTowerHitPoints": 7728,
+              "princessTowersHitPoints": [
+                4815,
+                2226
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000017,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000011,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 2,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 14.52
+            }
+          ],
+          "opponent": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 14000,
+              "crowns": 0,
+              "kingTowerHitPoints": 7218,
+              "princessTowersHitPoints": [
+                2484
+              ],
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000045,
+                  "level": 9,
+                  "evolutionLevel": 1,
+                  "maxLevel": 11,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "epic",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000055,
+                  "level": 8,
+                  "starLevel": 2,
+                  "maxLevel": 8,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "legendary",
+                  "elixirCost": 7,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 19.21
+            }
+          ],
+          "isHostedMatch": false,
+          "leagueNumber": 1
+        },
+        {
+          "type": "PvP",
+          "battleTime": "20261103T103541.000Z",
+          "isLadderTournament": false,
+          "arena": {
+            "id": 54000144,
+            "name": "Sample",
+            "rawName": "Arena_L18"
+          },
+          "gameMode": {
+            "id": 72000006,
+            "name": "Sample"
+          },
+          "deckSelection": "collection",
+          "team": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 13904,
+              "trophyChange": -28,
+              "crowns": 0,
+              "kingTowerHitPoints": 7728,
+              "princessTowersHitPoints": [
+                4858
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000173
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000017,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 1,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000011,
+                  "level": 14,
+                  "starLevel": 2,
+                  "evolutionLevel": 2,
+                  "maxLevel": 14,
+                  "maxEvolutionLevel": 3,
+                  "rarity": "rare",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+                    "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 16,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 9.96
+            }
+          ],
+          "opponent": [
+            {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "startingTrophies": 13919,
+              "trophyChange": 28,
+              "crowns": 1,
+              "kingTowerHitPoints": 7032,
+              "princessTowersHitPoints": [
+                4424,
+                2220
+              ],
+              "clan": {
+                "tag": "#EXAMPLE",
+                "name": "Sample",
+                "badgeId": 16000002
+              },
+              "cards": [
+                {
+                  "name": "Sample",
+                  "id": 26000063,
+                  "level": 11,
+                  "starLevel": 1,
+                  "evolutionLevel": 1,
+                  "maxLevel": 11,
+                  "maxEvolutionLevel": 1,
+                  "rarity": "epic",
+                  "elixirCost": 5,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png",
+                    "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png"
+                  }
+                },
+                {
+                  "name": "Sample",
+                  "id": 26000074,
+                  "level": 5,
+                  "maxLevel": 6,
+                  "rarity": "champion",
+                  "elixirCost": 4,
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png"
+                  }
+                }
+              ],
+              "supportCards": [
+                {
+                  "name": "Sample",
+                  "id": 159000000,
+                  "level": 15,
+                  "maxLevel": 16,
+                  "rarity": "common",
+                  "iconUrls": {
+                    "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+                  }
+                }
+              ],
+              "globalRank": null,
+              "elixirLeaked": 11.88
+            }
+          ],
+          "isHostedMatch": false,
+          "leagueNumber": 1
+        }
+      ]
+    }
+  ],
+  "get_cards": [
+    {
+      "arguments": {
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "name": "Sample",
+            "id": 26000000,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 3,
+            "elixirCost": 3,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+              "heroMedium": "https://api-assets.clashroyale.com/cardheroes/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+            },
+            "rarity": "common"
+          },
+          {
+            "name": "Sample",
+            "id": 26000001,
+            "maxLevel": 16,
+            "maxEvolutionLevel": 1,
+            "elixirCost": 3,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png",
+              "evolutionMedium": "https://api-assets.clashroyale.com/cardevolutions/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
+            },
+            "rarity": "common"
+          }
+        ],
+        "supportItems": [
+          {
+            "name": "Sample",
+            "id": 159000000,
+            "maxLevel": 16,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/Nzo5Gjbh7NG6O3Hyu7ev54Pu5zK7vDMR2fbpGdVsS64.png"
+            },
+            "rarity": "common"
+          },
+          {
+            "name": "Sample",
+            "id": 159000001,
+            "maxLevel": 11,
+            "iconUrls": {
+              "medium": "https://api-assets.clashroyale.com/cards/300/cUfU4UowRdbIiRvxv0ns4ezQUNndJTy7D2q4I_K_fzg.png"
+            },
+            "rarity": "epic"
+          }
+        ]
+      }
+    }
+  ],
+  "get_tournament": [
+    {
+      "arguments": {
+        "tournament_tag": "#2GG80C0Q"
+      },
+      "response": {
+        "tag": "#EXAMPLE",
+        "type": "open",
+        "status": "inPreparation",
+        "creatorTag": "#EXAMPLE",
+        "name": "Sample",
+        "description": "Sample",
+        "levelCap": 12,
+        "firstPlaceCardPrize": 0,
+        "capacity": 1,
+        "maxCapacity": 10,
+        "preparationDuration": 3600,
+        "duration": 1800,
+        "createdTime": "20261107T003030.000Z",
+        "membersList": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "score": 0,
+            "rank": 1,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000073
+            }
+          }
+        ],
+        "gameMode": {
+          "id": 72000009
+        }
+      }
+    }
+  ],
+  "get_clan_ranking": [
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 1,
+            "previousRank": 1,
+            "location": {
+              "id": 57000055,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "CL"
+            },
+            "clanScore": 140000,
+            "members": 50,
+            "badgeId": 16000038
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 2,
+            "previousRank": 3,
+            "location": {
+              "id": 57000209,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "SG"
+            },
+            "clanScore": 140000,
+            "members": 50,
+            "badgeId": 16000156
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 4,
+            "previousRank": 5,
+            "location": {
+              "id": 57000165,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "NP"
+            },
+            "clanScore": 140000,
+            "members": 50,
+            "badgeId": 16000159
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 5,
+            "previousRank": 6,
+            "location": {
+              "id": 57000239,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "TR"
+            },
+            "clanScore": 140000,
+            "members": 50,
+            "badgeId": 16000030
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_player_ranking": [
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3
+      },
+      "response": {
+        "items": [],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    }
+  ],
+  "get_clan_wars_ranking": [
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 1,
+            "previousRank": 1,
+            "location": {
+              "id": 57000218,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "ES"
+            },
+            "clanScore": 13362,
+            "members": 48,
+            "badgeId": 16000161
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 2,
+            "previousRank": 2,
+            "location": {
+              "id": 57000120,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "IT"
+            },
+            "clanScore": 12230,
+            "members": 50,
+            "badgeId": 16000081
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 4,
+            "previousRank": 4,
+            "location": {
+              "id": 57000087,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "FR"
+            },
+            "clanScore": 11507,
+            "members": 41,
+            "badgeId": 16000140
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 5,
+            "previousRank": 5,
+            "location": {
+              "id": 57000094,
+              "name": "Sample",
+              "isCountry": true,
+              "countryCode": "DE"
+            },
+            "clanScore": 10535,
+            "members": 49,
+            "badgeId": 16000168
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_top_player_path_of_legend_season_rankings": [
+    {
+      "arguments": {
+        "season_id": "2026-10",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 88,
+            "eloRating": 3547,
+            "rank": 1
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 87,
+            "eloRating": 3533,
+            "rank": 2
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "season_id": "2026-10",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 68,
+            "eloRating": 3493,
+            "rank": 4,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000032
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 79,
+            "eloRating": 3490,
+            "rank": 5,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000032
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_season": [
+    {
+      "arguments": {
+        "season_id": "2026-10"
+      },
+      "response": {
+        "id": "2026-10"
+      }
+    }
+  ],
+  "get_top_player_league_season_rankings": [
+    {
+      "arguments": {
+        "season_id": "2022-09",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 14,
+            "trophies": 8492,
+            "rank": 1,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000029
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 14,
+            "trophies": 8439,
+            "rank": 2,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000097
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "season_id": "2022-09",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 14,
+            "trophies": 8420,
+            "rank": 4,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000029
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 14,
+            "trophies": 8417,
+            "rank": 5,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000020
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_locations": [
+    {
+      "arguments": {
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "id": 57000000,
+            "name": "Sample",
+            "isCountry": false
+          },
+          {
+            "id": 57000001,
+            "name": "Sample",
+            "isCountry": false
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "id": 57000003,
+            "name": "Sample",
+            "isCountry": false
+          },
+          {
+            "id": 57000004,
+            "name": "Sample",
+            "isCountry": false
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_seasons_v2": [
+    {
+      "arguments": {},
+      "response": {
+        "items": [
+          {
+            "code": null,
+            "uniqueId": null,
+            "endTime": null
+          },
+          {
+            "code": null,
+            "uniqueId": null,
+            "endTime": null
+          }
+        ],
+        "paging": {
+          "cursors": {}
+        }
+      }
+    }
+  ],
+  "get_location": [
+    {
+      "arguments": {
+        "location_id": "57000094"
+      },
+      "response": {
+        "id": 57000094,
+        "name": "Sample",
+        "isCountry": true,
+        "countryCode": "DE"
+      }
+    }
+  ],
+  "get_player_path_of_legend_ranking": [
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 77,
+            "eloRating": 2334,
+            "rank": 1,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000008
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 55,
+            "eloRating": 2318,
+            "rank": 2,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000168
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "location_id": "global",
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 82,
+            "eloRating": 2253,
+            "rank": 4,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000168
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "expLevel": 76,
+            "eloRating": 2241,
+            "rank": 5,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000128
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ],
+  "get_events": [
+    {
+      "arguments": {},
+      "response": [
+        {
+          "eventTag": "#EXAMPLE",
+          "title": "Classic Challenge",
+          "description": "Sample"
+        },
+        {
+          "eventTag": "#EXAMPLE",
+          "title": "Grand Challenge",
+          "description": "Sample"
+        }
+      ]
+    }
+  ],
+  "get_leaderboard": [
+    {
+      "arguments": {
+        "leaderboard_id": 170000019,
+        "limit": 3
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 1,
+            "score": 4047,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000135
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 2,
+            "score": 4020
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    },
+    {
+      "arguments": {
+        "leaderboard_id": 170000019,
+        "limit": 3,
+        "after": "eyJwb3MiOjN9"
+      },
+      "response": {
+        "items": [
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 4,
+            "score": 4007,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000024
+            }
+          },
+          {
+            "tag": "#EXAMPLE",
+            "name": "Sample",
+            "rank": 5,
+            "score": 4002,
+            "clan": {
+              "tag": "#EXAMPLE",
+              "name": "Sample",
+              "badgeId": 16000024
+            }
+          }
+        ],
+        "paging": {
+          "cursors": {
+            "after": "eyJwb3MiOjZ9",
+            "before": "eyJwb3MiOjN9"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -224,6 +224,10 @@ def main():
         },
         "TrailEvent": {"id": "integer", "title": "object", "description": "object"},
     }
+    extra["LeagueSeasonV2"] = {"code": "string", "uniqueId": "integer", "endTime": "string"}
+    extra["LeaderboardEntry"]["clan"] = "PlayerClan"
+    extra["PlayerPathOfLegendRanking"]["eloRating"] = "integer"
+    extra["TrailEvent"]["eventTag"] = "string"
     schemas = extra | ref["schemas"]
     primitives = {
         "integer": "int",
@@ -245,7 +249,7 @@ def main():
             if typ not in primitives:
                 schemas.setdefault(element(typ), {})
     for op in ref["operations"]:
-        schemas.setdefault(element(op["response"]), {})
+        schemas.setdefault(element(op.get("client_response", op["response"])), {})
     lines = [
         '"""Typed response models; unknown API fields are retained."""',
         "from __future__ import annotations",
@@ -331,7 +335,7 @@ def main():
         paths = [p for p in params if p["in"] == "path"]
         queries = [p for p in params if p["in"] == "query"]
         paginated = any(p["name"] == "after" for p in queries)
-        response = op["response"]
+        response = op.get("client_response", op["response"])
         item = element(response)
         islist = response.endswith("List") or response in ("ClanWarLog", "RiverRaceLog")
         result = (

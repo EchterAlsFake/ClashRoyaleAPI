@@ -276,6 +276,7 @@ class LeaderboardEntry(APIModel):
     name: str | None = Field(default=None, alias="name")
     rank: int | None = Field(default=None, alias="rank")
     score: int | None = Field(default=None, alias="score")
+    clan: PlayerClan | None = Field(default=None, alias="clan")
 
 
 class LeagueSeason(APIModel):
@@ -291,6 +292,24 @@ class LeagueSeasonResult(APIModel):
     trophies: int | None = Field(default=None, alias="trophies")
     best_trophies: int | None = Field(default=None, alias="bestTrophies")
     rank: int | None = Field(default=None, alias="rank")
+
+
+class LeagueSeasonV2(APIModel):
+    """LeagueSeasonV2 response; omitted fields remain None."""
+
+    code: str | None = Field(default=None, alias="code")
+    unique_id: int | None = Field(default=None, alias="uniqueId")
+    end_time: datetime | None = Field(default=None, alias="endTime")
+
+    @field_validator("end_time", mode="before")
+    @classmethod
+    def parse_time(cls, value: Any) -> Any:
+        if isinstance(value, str):
+            try:
+                return datetime.strptime(value, "%Y%m%dT%H%M%S.%fZ").replace(tzinfo=UTC)
+            except ValueError:
+                return datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return value
 
 
 class Location(APIModel):
@@ -462,6 +481,7 @@ class PlayerPathOfLegendRanking(APIModel):
     rank: int | None = Field(default=None, alias="rank")
     trophies: int | None = Field(default=None, alias="trophies")
     clan: PlayerRankingClan | None = Field(default=None, alias="clan")
+    elo_rating: int | None = Field(default=None, alias="eloRating")
 
 
 class PlayerRanking(APIModel):
@@ -590,6 +610,7 @@ class TrailEvent(APIModel):
     id: int | None = Field(default=None, alias="id")
     title: Any | None = Field(default=None, alias="title")
     description: Any | None = Field(default=None, alias="description")
+    event_tag: str | None = Field(default=None, alias="eventTag")
 
 
 class UpcomingChests(APIModel):
@@ -617,6 +638,9 @@ class Page(APIModel, Generic[T]):
 
 __all__ = [
     "APIModel",
+    "Cursors",
+    "Paging",
+    "Page",
     "Arena",
     "Battle",
     "Chest",
@@ -629,7 +653,6 @@ __all__ = [
     "ClanWarStanding",
     "CurrentClanWar",
     "CurrentRiverRace",
-    "Cursors",
     "GameMode",
     "Item",
     "Items",
@@ -639,9 +662,8 @@ __all__ = [
     "LeaderboardEntry",
     "LeagueSeason",
     "LeagueSeasonResult",
+    "LeagueSeasonV2",
     "Location",
-    "Page",
-    "Paging",
     "PathOfLegendSeasonResult",
     "PeriodLog",
     "PeriodLogEntry",
