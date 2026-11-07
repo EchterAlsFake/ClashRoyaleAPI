@@ -6,5 +6,5 @@ from .errors import __all__ as _errors
 from .models import *
 from .models import __all__ as _models
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = ["Client", "__version__"] + _errors + _models

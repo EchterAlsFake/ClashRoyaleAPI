@@ -64,9 +64,9 @@ def main():
             "TITLE": "ClashRoyaleAPI",
             "HERO_TITLE": "ClashRoyaleAPI",
             "HERO_SUBTITLE": "Async Python client for all 30 documented official Clash Royale API endpoints.",
-            "VERSION": "1.0.0",
+            "VERSION": "1.0.1",
             "GITHUB_URL": "https://github.com/EchterAlsFake/ClashRoyaleAPI",
-            "PYPI_PACKAGE": "ClashRoyaleAPI",
+            "PYPI_PACKAGE": "async-royale-client",
         }.items()
     )
     fragment += "\n<!-- BEGIN:SIDEBAR_NAV -->\n" + nav + "\n<!-- END:SIDEBAR_NAV -->\n"

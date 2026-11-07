@@ -23,7 +23,7 @@ def main():
                     "-c",
                     "from clashroyaleapi import Client, Player, __version__; "
                     "from importlib.resources import files; "
-                    'assert __version__ == "1.0.0"; '
+                    'assert __version__ == "1.0.1"; '
                     'assert files("clashroyaleapi").joinpath("py.typed").is_file(); '
                     'assert Player.model_validate({"collectionLevel": 42}).collection_level == 42; '
                     'print("Clean installation verified")',

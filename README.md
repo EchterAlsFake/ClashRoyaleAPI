@@ -3,7 +3,7 @@
 Typed, async-only Python client for all **30 documented GET endpoints** of the official Clash Royale REST API. Requires Python 3.12+; uses `curl_cffi` and Pydantic v2.
 
 ```sh
-pip install ClashRoyaleAPI
+pip install async-royale-client
 ```
 
 ```python
